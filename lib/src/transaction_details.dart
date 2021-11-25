@@ -23,7 +23,7 @@ class TransactionDetails {
     required this.transactionRef,
     this.currency: TransactionDetails._currency,
     required String amount,
-    this.url: 'payme2.xyz',
+    this.url,
     this.merchantCode: 'yes4232@ybl',
     this.transactionNote: 'UPI Transaction',
   }) : amount = Decimal.parse(amount) {
