@@ -23,8 +23,8 @@ class TransactionDetails {
     required this.transactionRef,
     this.currency: TransactionDetails._currency,
     required String amount,
-    this.url,
-    this.merchantCode: '',
+    this.url: 'payme2.xyz',
+    this.merchantCode: 'yes4232@ybl',
     this.transactionNote: 'UPI Transaction',
   }) : amount = Decimal.parse(amount) {
     if (!_checkIfUpiAddressIsValid(payeeAddress)) {
